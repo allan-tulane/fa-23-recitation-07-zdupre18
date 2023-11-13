@@ -15,7 +15,7 @@ Place all written answers from `recitation-07.md` here for easier grading.
 
 
 
-- **5)** .  taking in the fact of n for nodes and m for edges the work would be O*(N + M). this is because the connected function iterates through the nodes and calls the reachable with that we have to see the work as a multiplication of n and M. in addition, the worst case of the function is that each node would have to be visited 
+- **5)** .  taking in the fact of n for nodes and m for edges the work would be O*(N + M). this is because the connected function iterates through the nodes and calls the reachable with that we have to see the work as a multiplication of n and M. in addition, the worst case of the function is that each node would have to be visited. Like a breadth first alorthitm 
 
 
 - **7)**
