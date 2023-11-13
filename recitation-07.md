@@ -16,7 +16,9 @@ Complete the `reachable` implementation and test with `test_reachable`. Think ab
 .  
 
 
-**2** What is the work of `reachable`, assuming $n$ nodes and $m$ edges?
+**2** What is the work of `reachable`, 
+
+assuming $n$ nodes and $m$ edges? using that N nodes and E for edges with thos varibale the work would be O( N + E). since the functions relatively work case goes through each node and each edge it would make sense the work would be this 
 
 **put answer in answers.md**  
 
@@ -34,6 +36,9 @@ Complete the `reachable` implementation and test with `test_reachable`. Think ab
 .  
 **4** What is the worst case number of times we need to call `reachable` to determine if a graph is connected?
 
+
+the worst case would be O(n) because n is the number of nodes in the graph. Seeing that the worst case scenarioe for the number of connected components would be the graph fully connected. with having no edges with pairs of nodes makes each node its entity. 
+
 **put answer in answers.md**  
 
 .  
@@ -45,12 +50,12 @@ Complete the `reachable` implementation and test with `test_reachable`. Think ab
 
 **put answer in answers.md**  
 
-.  
+.  taking in the fact of n for nodes and m for edges the work would be O*(N + M). this is because the connected function iterates through the nodes and calls the reachable with that we have to see the work as a multiplication of n and M. in addition, the worst case of the function is that each node would have to be visited 
 .  
 .  
 
-**6** Next, we'll use `reachable` to determine the number of connected components in a graph. Complete `n_components` and test with `test_n_components`. Again, think about how to minimize the number of calles to `reachable` you must make.
-
+**6** Next, we'll use `reachable` to determine the number of connected components in a graph. Complete `n_components` and test with `test_n_components`. Again, think about how to minimize the number of calls to `reachable` you must make.
+ 
 .  
 .  
 .  
@@ -58,7 +63,7 @@ Complete the `reachable` implementation and test with `test_reachable`. Think ab
 **7** What if we switched the graph representation to an adjacency matrix? Would the work of `reachable` change? If so, what would it be? If not, why not?
 
 **put answer in answers.md**  
-
+ in thinking about if we switched the graph representation the overall function would change in terms of implementation details, but the overall time complexity would remain the same. This is because the point of the reachable function is two taking the two vairbale of nodes and edges. checking if an edge exists between two nodes or checking each node iteritivally doenst allow for a change of time complexity even if the adjacency matrix changes. 
 .  
 .  
 .  
