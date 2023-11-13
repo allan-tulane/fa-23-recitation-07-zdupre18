@@ -17,18 +17,28 @@ def reachable(graph, start_node):
     result = set([start_node])
     frontier = set([start_node])
     while len(frontier) != 0:
-        ###TODO
-        pass
+       urrent_node = frontier.pop()
+        neighbors = graph[current_node]
+        for neighbor in neighbors:
+            if neighbor not in result:
+                result.add(neighbor)
+                frontier.add(neighbor)
     return result
 
 
 
 
+def connected(graph): #      a list of sets, where each set contains the nodes in a connected component
+   remaining_nodes = set(graph.keys())
+    connected_components = []
 
-def connected(graph):
-    ### TODO
-    pass
+    while remaining_nodes:
+        start_node = remaining_nodes.pop()
+        component = reachable(graph, start_node)
+        connected_components.append(component)
+        remaining_nodes -= component
 
+    return connected_components
 
 
 
@@ -37,6 +47,6 @@ def n_components(graph):
     Returns:
       the number of connected components in an undirected graph
     """
-    ### TODO
-    pass
+   connected_components = connected(graph)
+    return len(connected_components)
 
