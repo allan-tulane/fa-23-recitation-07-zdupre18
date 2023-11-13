@@ -19,3 +19,4 @@ Place all written answers from `recitation-07.md` here for easier grading.
 
 
 - **7)**
+ in thinking about if we switched the graph representation the overall function would change in terms of implementation details, but the overall time complexity would remain the same. This is because the point of the reachable function is two taking the two vairbale of nodes and edges. checking if an edge exists between two nodes or checking each node iteritivally doenst allow for a change of time complexity even if the adjacency matrix changes. 
